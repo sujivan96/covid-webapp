@@ -1,8 +1,7 @@
 import React from 'react'
 import {Nav, Navbar} from 'react-bootstrap'
 import logo from '../logo.png';
-import App from '../App';
-import Forms from './Forms';
+
 
 
 export default function NavBar() {

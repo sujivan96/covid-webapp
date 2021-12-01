@@ -135,3 +135,28 @@ padding-right: 40px;
   background: linear-gradient(
 14deg, #b8b5b5e6 60%, #f8f8f8 60%);
 }
+.formbox{
+  width: 30rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff7d!important;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.60rem;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+ 
+  
+  
+  
+}
+.coniner{
+ padding-left: 30%;
+ padding-top: 30px;
+
+}
+

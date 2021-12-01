@@ -6,7 +6,7 @@ export default function Forms() {
         <div className="coniner">
         <div className="formbox">
            <Form>
-               <h1>hh sss</h1>
+               <h1>Covide 19 data insert form</h1>
   <Form.Group className="mb-3">
     <Form.Label>Country</Form.Label>
     <Form.Control type="text" placeholder="Enter Your Country" />

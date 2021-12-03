@@ -69,12 +69,12 @@ export default function Forms() {
 
           <Form.Group className="mb-3">
             <Form.Label>Covid Cases</Form.Label>
-            <Form.Control onChange={(e) => handle(e)} id="cases" value={data.cases} type="number" placeholder="Number of Covid Cases" required />
+            <Form.Control onChange={(e) => handle(e)} id="cases" value={data.cases} type="number" min="0" placeholder="Number of Covid Cases" required />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Covid Deaths</Form.Label>
-            <Form.Control onChange={(e) => handle(e)} id="deaths" value={data.deaths} type="number" placeholder="Number of Covid Deaths" required />
+            <Form.Control onChange={(e) => handle(e)} id="deaths" value={data.deaths} type="number" min="0" placeholder="Number of Covid Deaths" required />
           </Form.Group>
 
           <Form.Group className="mb-3">

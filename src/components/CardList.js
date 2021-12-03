@@ -11,12 +11,12 @@ function CardList({ results }) {
 
 
   }
-  
+
   return (
-    
+
 
     <div>
-      
+
       {data.map((item) => (
         <Cards key={item.country} covid19={item} />
       ))}

@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import covid from '../api/covid';
 import CardList from './CardList';
-import Cards from './Cards';
 import SearchBar from './SearchBar';
 
 function Home() {
@@ -10,7 +9,7 @@ function Home() {
         results: []
     });
 
-  
+
     const onSearch = async (text) => {
         const results = await covid.get("/", { params: { name: text, date: '2020-04-01' } })
 

@@ -3,13 +3,11 @@ import { Nav, Navbar } from 'react-bootstrap'
 import logo from '../logo.png';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link,
   Routes
 } from "react-router-dom";
 import Forms from './Forms';
-import App from '../App';
 import Home from './Home';
 
 
@@ -34,7 +32,7 @@ export default function NavBar() {
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <Nav.Link as={Link} to={"/forms"}>Form</Nav.Link>
-              
+
 
             </Nav>
           </Navbar.Collapse>

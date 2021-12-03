@@ -19,7 +19,7 @@ export default function Forms() {
 
   function onChange(value) {
 
-    console.log("Captcha value:", value);
+    console.log("Captcha Value:", value);
 
   }
 

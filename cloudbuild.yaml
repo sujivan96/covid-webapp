@@ -1,11 +1,14 @@
-runtime: nodejs16
+steps:
+  # install npm dependencies
+  - name: node
+    entrypoint: npm
+    args:
+      - 'install'
 
-handlers:
-# Serve all static files with url ending with a file extension
-- url: /(.*\..+)$
-  static_files: build/\1
-  upload: build/(.*\..+)$
-# Catch all handler to index.html
-- url: /.*
-  static_files: build/index.html
-  upload: build/index.html
+  # deploy to app engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'app'
+      - 'deploy'
+      - 'app.yaml'
+
